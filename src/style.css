@@ -1,1 +1,86 @@
 @import '@rolemodel/optics/dist/css/optics.css';
+
+.sidebar {
+  height: 100%;
+  width: 100%;
+  justify-content: baseline;
+  padding: var(--op-space-2x-large);
+  border-right: var(--op-border-width-large) lightgrey solid;
+  box-shadow: none;
+}
+
+.sidebar__title {
+  margin-bottom: var(--op-space-2x-large);
+}
+
+.sidebar__btn {
+  color: black;
+  padding: var(--op-space-small);
+  transition: 0.1s;
+}
+
+.sidebar__btn:hover {
+  border-left: var(--op-border-width-x-large) green solid;
+  color: green;
+}
+
+.sidebar__divider {
+  margin-bottom: var(--op-space-large);
+  border-top: var(--op-border-width-large) grey solid;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  grid-template-columns: 3fr 1fr;
+}
+
+.main__players {
+  padding: var(--op-space-2x-large);
+  margin-left: var(--op-space-2x-large);
+  margin-top: var(--op-space-2x-large);
+}
+
+.players__btn-group {
+  flex-direction: column;
+  width: 100%;
+}
+
+.players__accordion {
+  padding: var(--op-space-small);
+  width: 100%;
+  justify-content: start;
+  border: var(--op-border-width-large) lightgrey solid;
+  border-radius: var(--op-radius-medium);
+}
+
+.main__chat {
+  margin-left: var(--op-space-2x-large);
+  margin-right: var(--op-space-2x-large);
+  margin-top: var(--op-space-2x-large);
+}
+
+.chat__feed {
+  height: 100%;
+
+  padding: var(--op-space-2x-large);
+
+  border: var(--op-border-width-large) green solid;
+  border-bottom: none;
+
+  border-top-left-radius: var(--op-radius-medium);
+  border-top-right-radius: var(--op-radius-medium);
+
+  background-color: rgba(0, 128, 0, 0.192);
+}
+
+.feed__textarea {
+  margin-top: auto;
+}
+
+.main__hand {
+  padding: var(--op-space-medium);
+  grid-column: 1 / -1;
+  background-color: rgb(240, 240, 240);
+  border-top: lightgrey var(--op-border-width-large) solid;
+}

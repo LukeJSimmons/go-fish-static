@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme-mode="light">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -7,7 +7,42 @@
     <link rel="stylesheet" href="/src/style.css" />
     <title>Go Fish Static</title>
   </head>
-  <body>
-    <button type="button" class="btn btn--primary">Hello world.</button>
+  <body class="app-with-sidebar">
+    <nav class="sidebar">
+      <h1 class="sidebar__title">Go Fish</h1>
+      <div class="sidebar__content">
+        <a class="sidebar__btn">Games</a>
+        <a class="sidebar__btn">Stats</a>
+      </div>
+      <div class="sidebar__content sidebar__content--end">
+        <div class="divider sidebar__divider"></div>
+        <a class="sidebar__btn">Profile</a>
+        <a class="sidebar__btn">Log Out</a>
+      </div>
+    </nav>
+    <main class="main">
+      <div class="main__players">
+        <h1>Players</h1>
+        <div class="btn-group players__btn-group">
+          <details class="accordion players__accordion">
+            <summary>
+              <span class="accordion__label">Player 1</span>
+              <span class="material-symbols-outlined icon accordion__marker">arrow_right</span>
+              
+            </summary>
+            Some info
+          </details>
+        </div>
+      </div>
+      <div class="main__chat">
+        <h1>Game Feed</h1>
+        <div class="chat__feed">
+          <textarea class="feed__textarea"></textarea>
+        </div>
+      </div>
+      <div class="main__hand">
+        <h3>Hand</h3>
+      </div>
+    </main>
   </body>
 </html>
