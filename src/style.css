@@ -33,34 +33,65 @@
   display: grid;
   grid-template-rows: 3fr 1fr;
   grid-template-columns: 3fr 1fr;
+
+  .main__players {
+    padding: var(--op-space-2x-large);
+    margin-left: var(--op-space-2x-large);
+    margin-top: var(--op-space-2x-large);
+  }
+
+  .main__chat {
+    margin-left: var(--op-space-2x-large);
+    margin-right: var(--op-space-2x-large);
+    margin-top: var(--op-space-2x-large);
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__hand {
+    padding: var(--op-space-medium);
+    grid-column: 1 / -1;
+    background-color: rgb(240, 240, 240);
+    border-top: lightgrey var(--op-border-width-large) solid;
+  }
 }
 
-.main__players {
-  padding: var(--op-space-2x-large);
-  margin-left: var(--op-space-2x-large);
-  margin-top: var(--op-space-2x-large);
-}
-
-.players__btn-group {
+.btn-group--players {
   flex-direction: column;
   width: 100%;
 }
 
-.players__accordion {
-  padding: var(--op-space-small);
-  width: 100%;
-  justify-content: start;
-  border: var(--op-border-width-large) lightgrey solid;
-  border-radius: var(--op-radius-medium);
-}
+.accordion {
+  &.accordion--players {
+    padding: var(--op-space-small);
+    width: 100%;
+    justify-content: start;
+    border: var(--op-border-width-large) lightgrey solid;
+    border-radius: var(--op-radius-medium);
 
-.main__chat {
-  margin-left: var(--op-space-2x-large);
-  margin-right: var(--op-space-2x-large);
-  margin-top: var(--op-space-2x-large);
+    margin-bottom: calc(var(--op-border-width-large) * -1);
+  }
+
+  .accordion__label.accordion__label--players {
+    font-size: var(--op-font-small);
+  }
+
+  .accordion__cards {
+    display: flex;
+  }
+
+  .accordion__card {
+    width: calc(var(--op-size-unit) * 10);
+  }
 }
 
 .chat__feed {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
   height: 100%;
 
   padding: var(--op-space-2x-large);
@@ -71,16 +102,10 @@
   border-top-left-radius: var(--op-radius-medium);
   border-top-right-radius: var(--op-radius-medium);
 
-  background-color: rgba(0, 128, 0, 0.192);
-}
+  background-color: rgba(0, 128, 0, 0.2);
 
-.feed__textarea {
-  margin-top: auto;
-}
-
-.main__hand {
-  padding: var(--op-space-medium);
-  grid-column: 1 / -1;
-  background-color: rgb(240, 240, 240);
-  border-top: lightgrey var(--op-border-width-large) solid;
+  .textarea--feed {
+    justify-self: end;
+    border: var(--op-border-width-large) lightgrey solid;
+  }
 }

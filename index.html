@@ -23,21 +23,59 @@
     <main class="main">
       <div class="main__players">
         <h1>Players</h1>
-        <div class="btn-group players__btn-group">
-          <details class="accordion players__accordion">
+        <div class="btn-group btn-group--players">
+          <details class="accordion accordion--players">
             <summary>
-              <span class="accordion__label">Player 1</span>
+              <span class="accordion__label accordion__label--players">Player 1</span>
               <span class="material-symbols-outlined icon accordion__marker">arrow_right</span>
               
             </summary>
-            Some info
+            <div class="accordion__cards">
+              <img class="accordion__card" src="cards-playing-club-outline.svg">
+              <img class="accordion__card" src="cards-playing-diamond-outline.svg">
+              <img class="accordion__card" src="cards-playing-heart-outline.svg">
+              <img class="accordion__card" src="cards-playing-spade-outline.svg">
+              <img class="accordion__card" src="cards-playing-club-outline.svg">
+              <img class="accordion__card" src="cards-playing-diamond-outline.svg">
+            </div>
+          </details>
+          <details class="accordion accordion--players">
+            <summary>
+              <span class="accordion__label accordion__label--players">Player 2</span>
+              <span class="material-symbols-outlined icon accordion__marker">arrow_right</span>
+              
+            </summary>
+            <div class="accordion__cards">
+              <img class="accordion__card" src="cards-playing-club-outline.svg">
+              <img class="accordion__card" src="cards-playing-diamond-outline.svg">
+              <img class="accordion__card" src="cards-playing-heart-outline.svg">
+              <img class="accordion__card" src="cards-playing-spade-outline.svg">
+              <img class="accordion__card" src="cards-playing-club-outline.svg">
+              <img class="accordion__card" src="cards-playing-diamond-outline.svg">
+            </div>
+          </details>
+          <details class="accordion accordion--players">
+            <summary>
+              <span class="accordion__label accordion__label--players">Player 3</span>
+              <span class="material-symbols-outlined icon accordion__marker">arrow_right</span>
+              
+            </summary>
+            <div class="accordion__cards">
+              <img class="accordion__card" src="cards-playing-club-outline.svg">
+              <img class="accordion__card" src="cards-playing-diamond-outline.svg">
+              <img class="accordion__card" src="cards-playing-heart-outline.svg">
+              <img class="accordion__card" src="cards-playing-spade-outline.svg">
+              <img class="accordion__card" src="cards-playing-club-outline.svg">
+              <img class="accordion__card" src="cards-playing-diamond-outline.svg">
+            </div>
           </details>
         </div>
       </div>
       <div class="main__chat">
         <h1>Game Feed</h1>
         <div class="chat__feed">
-          <textarea class="feed__textarea"></textarea>
+          <p><strong>Scott</strong> asks <strong>Hunter</strong> if he has any <strong>8s</strong></p>
+          <textarea class="textarea--feed form-control" placeholder="Send a message..."></textarea>
         </div>
       </div>
       <div class="main__hand">
