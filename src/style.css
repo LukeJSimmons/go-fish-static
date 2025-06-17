@@ -16,10 +16,12 @@
 .sidebar__btn {
   color: black;
   padding: var(--op-space-small);
+  border-left: 0 green solid;
   transition: 0.1s;
 }
 
-.sidebar__btn:hover {
+.sidebar__btn:hover,
+.btn--active {
   border-left: var(--op-border-width-x-large) green solid;
   color: green;
 }
@@ -54,6 +56,13 @@
     grid-column: 1 / -1;
     background-color: rgb(240, 240, 240);
     border-top: lightgrey var(--op-border-width-large) solid;
+    display: flex;
+    justify-content: space-between;
+
+    .hand__title {
+      position: absolute;
+      bottom: calc(var(--op-space-medium) * 13);
+    }
   }
 }
 
@@ -75,6 +84,7 @@
 
   .accordion__label.accordion__label--players {
     font-size: var(--op-font-small);
+    padding-right: var(--op-space-2x-large);
   }
 
   .accordion__cards {
@@ -107,5 +117,43 @@
   .textarea--feed {
     justify-self: end;
     border: var(--op-border-width-large) lightgrey solid;
+  }
+}
+
+.hand__cards {
+  height: 100%;
+
+  .btn--cards {
+    height: 100%;
+    width: calc(var(--op-size-unit) * 32);
+    background-color: lightgrey;
+    border: var(--op-border-width-large) grey solid;
+    box-shadow: none;
+    border-radius: 0;
+    margin-right: calc(var(--op-space-4x-large) * -1);
+    position: relative;
+    bottom: 0;
+    transition: 0.1s;
+  }
+
+  .btn--cards:hover {
+    bottom: var(--op-space-2x-large);
+  }
+
+  .btn--cards:checked {
+    z-index: 1;
+    bottom: var(--op-space-4x-large);
+  }
+}
+
+.hand__books {
+  display: flex;
+  flex-direction: row-reverse;
+  .btn--cards {
+    margin-right: 0;
+    margin-left: calc(var(--op-space-4x-large) * -1);
+    justify-content: end;
+    align-items: start;
+    padding: var(--op-space-small);
   }
 }
