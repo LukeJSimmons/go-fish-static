@@ -1,0 +1,24 @@
+.accordion {
+  &.accordion--players {
+    padding: var(--op-space-small);
+    width: 100%;
+    justify-content: start;
+    border: var(--op-border-width-large) lightgrey solid;
+    border-radius: var(--op-radius-medium);
+
+    margin-bottom: calc(var(--op-border-width-large) * -1);
+  }
+
+  .accordion__label.accordion__label--players {
+    font-size: var(--op-font-small);
+    padding-right: var(--op-space-2x-large);
+  }
+
+  .accordion__cards {
+    display: flex;
+  }
+
+  .accordion__card {
+    width: calc(var(--op-size-unit) * 10);
+  }
+}

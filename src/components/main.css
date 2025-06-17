@@ -1,0 +1,36 @@
+/* TODO: Change name */
+
+.main {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  grid-template-columns: 3fr 1fr;
+
+  .main__players {
+    padding: var(--op-space-2x-large);
+    margin-left: var(--op-space-2x-large);
+    margin-top: var(--op-space-2x-large);
+  }
+
+  .main__chat {
+    margin-left: var(--op-space-2x-large);
+    margin-right: var(--op-space-2x-large);
+    margin-top: var(--op-space-2x-large);
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__hand {
+    padding: var(--op-space-medium);
+    grid-column: 1 / -1;
+    background-color: rgb(240, 240, 240);
+    border-top: lightgrey var(--op-border-width-large) solid;
+    display: flex;
+    justify-content: space-between;
+
+    .hand__title {
+      position: absolute;
+      bottom: calc(var(--op-space-medium) * 13);
+    }
+  }
+}

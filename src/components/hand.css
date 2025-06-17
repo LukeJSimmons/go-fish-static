@@ -1,0 +1,10 @@
+.hand {
+  .hand__cards {
+    height: 100%;
+  }
+
+  .hand__books {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

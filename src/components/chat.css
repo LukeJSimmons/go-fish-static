@@ -1,0 +1,25 @@
+.chat {
+  .chat__feed {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  
+    height: 100%;
+  
+    padding: var(--op-space-2x-large);
+  
+    border: var(--op-border-width-large) green solid;
+    border-bottom: none;
+  
+    border-top-left-radius: var(--op-radius-medium);
+    border-top-right-radius: var(--op-radius-medium);
+  
+    background-color: rgba(0, 128, 0, 0.2);
+  }
+
+  .chat__textarea {
+    justify-self: end;
+    border: var(--op-border-width-large) lightgrey solid;
+  }
+}

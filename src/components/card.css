@@ -1,0 +1,29 @@
+.card {
+  height: 100%;
+  width: calc(var(--op-size-unit) * 32);
+  background-color: lightgrey;
+  border: var(--op-border-width-large) grey solid;
+  box-shadow: none;
+  border-radius: 0;
+  margin-right: calc(var(--op-space-4x-large) * -1);
+  position: relative;
+  bottom: 0;
+  transition: 0.1s;
+
+  &:hover {
+    bottom: var(--op-space-2x-large);
+  }
+
+  &:checked {
+    z-index: 1;
+    bottom: var(--op-space-4x-large);
+  }
+
+  &.card--book {
+    margin-right: 0;
+    margin-left: calc(var(--op-space-4x-large) * -1);
+    justify-content: end;
+    align-items: start;
+    padding: var(--op-space-small);
+  }
+}
