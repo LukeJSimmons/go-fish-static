@@ -5,6 +5,7 @@
   border: var(--op-border-width-large) grey solid;
   box-shadow: none;
   border-radius: 0;
+  appearance: none;
   margin-right: calc(var(--op-space-4x-large) * -1);
   position: relative;
   bottom: 0;
@@ -22,6 +23,7 @@
   &.card--book {
     margin-right: 0;
     margin-left: calc(var(--op-space-4x-large) * -1);
+    display: flex;
     justify-content: end;
     align-items: start;
     padding: var(--op-space-small);
