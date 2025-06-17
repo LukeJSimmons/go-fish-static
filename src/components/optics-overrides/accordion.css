@@ -3,7 +3,7 @@
     padding: var(--op-space-small);
     width: 100%;
     justify-content: start;
-    border: var(--op-border-width-large) lightgrey solid;
+    border: var(--op-border-width-large) var(--op-color-neutral-plus-four) solid;
     border-radius: var(--op-radius-medium);
 
     margin-bottom: calc(var(--op-border-width-large) * -1);

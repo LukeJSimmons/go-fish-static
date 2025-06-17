@@ -1,4 +1,17 @@
 .hand {
+  padding: var(--op-space-medium);
+  grid-column: 1 / -1;
+  background-color: var(--op-color-neutral-plus-six);
+  box-shadow: inset 0 calc(-1 * var(--op-border-width-large)) 0 0 var(--op-color-neutral-plus-two);
+  border-top: var(--op-color-neutral-plus-four) var(--op-border-width-large) solid;
+  display: flex;
+  justify-content: space-between;
+
+  .hand__title {
+    position: absolute;
+    bottom: calc(var(--op-space-medium) * 13);
+  }
+
   .hand__cards {
     height: 100%;
   }
